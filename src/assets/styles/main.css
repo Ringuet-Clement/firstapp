@@ -1,0 +1,47 @@
+@import url(./todo/ToDo.css);
+@import url(./Header.css);
+@import url(./leveling/expbar.css);
+@import url(./habits/habits.css);
+@import url(./param/param.css);
+@import url(./timer/timer.css);
+
+:root {
+     --dark-color: #252429;
+     --gray-color: #E5E6EA;
+     --light_red-color: #8A2BE2;
+     --dark_red-color: #2f2f2f;
+}
+
+#app {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 15px;
+}
+
+.all_round {
+     display: flex;
+     flex-direction: row;
+     gap: 10px;
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+}
+
+.round {
+     width: 25px;
+     height: 25px;
+     background-color: var(--dark_red-color);
+     clip-path: circle();
+}
+
+.levelingBar {
+     position: fixed;
+     top: 10px;
+     left: 10px;
+}
+
+.pointer:hover {
+     cursor: pointer;
+}

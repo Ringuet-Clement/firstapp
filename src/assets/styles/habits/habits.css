@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;700&display=swap');
+
+.habits_List {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     height: 55vh;
+     width: 60vw;
+     background-color: var(--dark_red-color);
+     display: none;
+     border-radius: 15px;
+     padding: 20px;
+     font-family: 'Montserrat', sans-serif;
+}
+
+.habits_List.active {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.Add_new_habit {
+     position: relative;
+     bottom: 0;
+     height: 7%;
+     width: 75%;
+     border: 1px solid white;
+     margin-top: auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.Add_new_habit:hover {
+     cursor: pointer;
+}
+
+.habit-grid {
+     display: grid;
+     grid-template-columns: 1fr repeat(7, 50px) 30px;
+     gap: 10px;
+     align-items: center;
+     text-align: center;
+}
+
+.day {
+     font-weight: bold;
+}
+
+.habit-grid input[type="text"] {
+     width: 100%;
+     padding: 5px;
+}
+
+.habit-grid input[type="checkbox"] {
+     margin: auto;
+}

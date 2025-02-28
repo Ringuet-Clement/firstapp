@@ -1,23 +1,62 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Electron
+/.electron/
+dist/
+*.log
+
+# Fichiers de build (pour Electron Builder)
+/build/
+/release/
+/app/
+/electron-builder/
+
+# Fichiers de configuration IDE
+.vscode/
+.idea/
+
+# Système d'exploitation
 .DS_Store
-node_modules
-/dist
+Thumbs.db
 
+# Dossiers temporaires et de cache
+.cache/
+*.swp
+*.swo
 
-# local env files
+# Fichiers spécifiques aux environnements de développement
+.env
 .env.local
 .env.*.local
 
-# Log files
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+# Fichiers de configuration de tests
+coverage/
 
-# Editor directories and files
-.idea
-.vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+# Archives et fichiers temporaires
+*.tgz
+*.tar.gz
+*.zip
+
+# Fichiers spécifiques à l'OS
+# Windows
+*.cab
+*.msi
+*.exe
+*.dll
+# macOS
+*.app
+*.dmg
+
+# Répertoire de publication
+/public/
+
+# Répertoire de sauvegarde de IDE ou autres éditeurs
+*.sublime-workspace
+*.sublime-project
+
+# Logs d'Electron
+/.vscode/*

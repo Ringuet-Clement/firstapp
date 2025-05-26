@@ -8,6 +8,7 @@
       <div class="round pointer" @click="togglePage('habits')"></div>
       <div class="round pointer" @click="togglePage('timer')"></div>
       <div class="round pointer" @click="togglePage('Param')"></div>
+      coucou
     </div>
 
     <ParamPage @change-background="updateBackgroundImage" class="Param_List" :class="{ active: pages.ParamActive }" />

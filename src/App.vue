@@ -8,12 +8,14 @@
       <div class="round pointer" @click="togglePage('habits')"></div>
       <div class="round pointer" @click="togglePage('timer')"></div>
       <div class="round pointer" @click="togglePage('Param')"></div>
+      <div class="round pointer" @click="togglePage('mail')">📬</div>
     </div>
 
     <ParamPage @change-background="updateBackgroundImage" class="Param_List" :class="{ active: pages.ParamActive }" />
     <timerPage :class="{ active: pages.timerActive }" />
     <todoPage class="ToDo_List" :class="{ active: pages.todoActive }" @add-xp="handleAddXp" />
     <habitsPage class="habits_List" :class="{ active: pages.habitsActive }" />
+    <mailBox :visible="pages.mailActive" />
   </div>
 </template>
 
@@ -26,6 +28,7 @@ export default {
         ParamActive: false,
         timerActive: false,
         habitsActive: false,
+        mailActive: false,
       },
       backgroundImage: '',
     };

@@ -21,7 +21,7 @@
 
 <script>
 
-import mailsData from '@/assets/data/mails.json';
+import mailsData from "../assets/data/mail.json"
 
 export default {
      name: 'MailBox',

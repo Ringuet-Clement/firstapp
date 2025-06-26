@@ -22,7 +22,7 @@
 <script>
 
 import mailsData from "../assets/data/mail.json"
-
+console.log(mailsData)
 export default {
      name: 'MailBox',
      props: {

@@ -49,7 +49,7 @@ export default {
 
     updateBackgroundImage(base64Image) {
       this.backgroundImage = base64Image;
-      localStorage.setItem('backgroundImage', base64Image);  // Sauvegarde de l'image en base64
+      localStorage.setItem('backgroundImage', base64Image);
       this.applyBackgroundImage();
     },
 

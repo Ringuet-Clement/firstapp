@@ -20,6 +20,9 @@
 </template>
 
 <script>
+
+import mailsData from '@/assets/data/mails.json';
+
 export default {
      name: 'MailBox',
      props: {
@@ -27,8 +30,8 @@ export default {
      },
      data() {
           return {
-               mails: [],
                selectedMailIndex: null,
+               mails: mailsData,
           };
      },
      computed: {

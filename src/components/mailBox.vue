@@ -1,7 +1,8 @@
 <template>
      <div class="mailbox-popup" v-if="visible">
+          <button class="close-button" @click="$emit('close')">✖</button>
           <div class="mailbox-left">
-               <div v-for="(mail, index) in mails" :key="index" :class="{ selected: selectedMailIndex === index }"
+               <div v-for="(mail, index) in mails" :key="index" :class="{ selected: selectedMailIndex === index }" class = "singlemail"
                     @click="selectMail(index)">
                     <strong>{{ mail.title }}</strong><br>
                     <span>{{ mail.preview }}</span>
@@ -22,7 +23,7 @@
 <script>
 
 import mailsData from "../assets/data/mail.json"
-console.log(mailsData)
+
 export default {
      name: 'MailBox',
      props: {
@@ -63,14 +64,18 @@ export default {
      border-radius: 10px;
      overflow: hidden;
      z-index: 100;
+     color: black;
 }
 
 .mailbox-left {
-     width: 30%;
-     background: #f0f0f0;
-     padding: 10px;
-     overflow-y: auto;
-     border-right: 1px solid #ccc;
+  width: 30%;
+  background: #f0f0f0;
+  padding: 10px;
+  overflow-y: auto;
+  border-right: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .mailbox-right {
@@ -81,5 +86,21 @@ export default {
 
 .selected {
      background-color: #d0e0ff;
+}
+
+.singlemail:hover {
+     cursor: pointer;
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+  z-index: 101;
 }
 </style>

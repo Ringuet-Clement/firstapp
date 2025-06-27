@@ -15,7 +15,7 @@
     <timerPage :class="{ active: pages.timerActive }" />
     <todoPage class="ToDo_List" :class="{ active: pages.todoActive }" @add-xp="handleAddXp" />
     <habitsPage class="habits_List" :class="{ active: pages.habitsActive }" />
-    <mailBox :visible="pages.mailActive" />
+    <mailBox :visible="pages.mailActive" @close="pages.mailActive = false" />
   </div>
 </template>
 

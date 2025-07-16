@@ -8,5 +8,15 @@
           "title": "Second mail test",
           "preview": "Ceci est un test pour appliquer le hover sur la bonne partie du mail",
           "content": "Salut, il ne faut pas prêter attention a moi je ne suis la que pour que  notre devellopeur puisse faire un test sur le hover et surtout sur la facon dont nous réagissons lorsqu'il y a 2 mails !"
+     },
+     {
+          "title": "Second mail test",
+          "preview": "Ceci est un test pour appliquer le hover sur la bonne partie du mail",
+          "content": "Salut, il ne faut pas prêter attention a moi je ne suis la que pour que  notre devellopeur puisse faire un test sur le hover et surtout sur la facon dont nous réagissons lorsqu'il y a 2 mails !"
+     },
+     {
+          "title": "Last test",
+          "preview": "only testing",
+          "content": "tessssting"
      }
 ]
